@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <title>Latitude Analysis Dashboard</title>
+  </head>
+  <body>
+    <div class='container'> <!-- Start of Page Container -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"> <!-- Start of Navbar-->
+            <div class='container'> <!-- Start of Navbar Container Div-->
+                <div class='row' style='width: 100%'> <!--Start of Navbar Container Row-->
+                    <div class='col-md-3'> <!-- Start of Navbar Title Column-->
+                      <a class="navbar-brand" href="index.html" style="color: white;">Latitude</a>
+                    </div> <!-- End of Navbar Title Column-->
+                    <div class='col-md-9 navbar-links'> <!--Start of Navbar Links Column-->
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style='float: right;'>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="maxtemperature.html">Max Temperature</a>
+                      <a class="dropdown-item" href="humidity.html">Humidity</a>
+                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                  </li>
+                </ul>
+              </div>
+            </div> <!--End of Navbar links column-->
+          </div> <!--End of Navbar Container Row-->
+        </div> <!--` End of Navbar Container Div-->
+      </nav> <!-- End of Navbar-->
+
+      <div class='container' id='maxtemp-container'> <!--Start of Content Container-->
+        <div class='row'> <!-- Start of Content Row-->
+          <div class='col-md-8'> <!-- Start of Summary Column-->
+            <article>
+              <h1>Humidity</h1>
+              <hr/>
+              <img src='Resources/assets/images/Fig2.png' class='humidity-image'/>
+              <p>The correlation between latitude and humidity is not strong in itself. Despite this observation, the data suggests that in certain areas as the latitude decreases, the humidity gradually decreases as well.  </p></article>
+          </div> <!-- End of Summary Column-->
+          <div class='col-md-4'> <!-- Start of Visualization Column-->
+            <div class='container viz-info'>
+            <h2>Visualizations</h2>
+            <hr/>
+            <div class='row'></div>
+                <a href="maxtemperature.html"><img src="Resources/assets/images/Fig1.png" class="small-image"></a>
+                <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="small-image"></a>
+                <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="small-image"></a>
+                <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="small-image"></a>
+            </div>
+          </div> <!-- End of Visualization Column-->
+      </div> <!--End of Content Container-->
+
+    </div> <!-- End of Page Container-->
+  
+  </body>
+  </html>
